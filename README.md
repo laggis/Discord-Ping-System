@@ -1,50 +1,50 @@
 # Discord Role Reaction Bot
 
-En Discord-bot som tilldelar roller baserat på reaktioner på inbäddade meddelanden. Boten sparar antalet reaktioner även om den startas om.
+A Discord bot that assigns roles based on reactions to embedded messages. The bot saves reaction counts even when restarted.
 
-## Funktioner
+## Features
 
-- Tilldelar roller baserat på reaktioner
-- Sparar antalet reaktioner mellan omstarter
-- Visar antalet användare med varje roll i inbäddade meddelanden
-- Stöder flera roller med olika emojis
+- Assigns roles based on reactions
+- Saves reaction counts between restarts
+- Shows the number of users with each role in embedded messages
+- Supports multiple roles with different emojis
 
 ## Installation
 
-1. Klona detta repository
-2. Installera beroenden med `npm install`
-3. Skapa en `.env`-fil med din Discord-bot-token:
+1. Clone this repository
+2. Install dependencies with `npm install`
+3. Create a `.env` file with your Discord bot token:
    ```
-   TOKEN=din_discord_bot_token_här
+   TOKEN=your_discord_bot_token_here
    ```
-4. Starta boten med `npm start`
+4. Start the bot with `npm start`
 
-## Konfiguration
+## Configuration
 
-Boten är konfigurerad för att hantera två roller:
+The bot is configured to handle two roles:
 
-1. **Ping-roll** (ID: 1132077210459717764) - Tilldelas när användare reagerar med 🔔
-2. **Fivem-roll** (ID: 761336023476994069) - Tilldelas när användare reagerar med 🐧
+1. **Ping role** (ID: 1132077210459717764) - Assigned when users react with 🔔
+2. **Fivem role** (ID: 761336023476994069) - Assigned when users react with 🐧
 
-Båda rollerna visas i kanal med ID 1132030110002847744.
+Both roles are displayed in channel with ID 1132030110002847744.
 
-För att ändra konfigurationen, redigera `config`-objektet i `index.js`-filen.
+To change the configuration, edit the `config` object in the `index.js` file.
 
-## Bot-behörigheter
+## Bot Permissions
 
-Boten behöver följande behörigheter i Discord:
+The bot needs the following permissions in Discord:
 
-- Läsa meddelanden
-- Skicka meddelanden
-- Hantera roller
-- Läsa meddelandehistorik
-- Lägga till reaktioner
+- Read messages
+- Send messages
+- Manage roles
+- Read message history
+- Add reactions
 
-## Felsökning
+## Troubleshooting
 
-Om boten inte fungerar som förväntat, kontrollera följande:
+If the bot doesn't work as expected, check the following:
 
-1. Se till att bot-token är korrekt i `.env`-filen
-2. Kontrollera att boten har rätt behörigheter i Discord-servern
-3. Verifiera att roll-ID och kanal-ID är korrekta i konfigurationen
-4. Kontrollera konsolloggar för eventuella felmeddelanden
+1. Make sure the bot token is correct in the `.env` file
+2. Check that the bot has the right permissions in the Discord server
+3. Verify that role IDs and channel ID are correct in the configuration
+4. Check console logs for any error messages
