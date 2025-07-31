@@ -1,0 +1,13 @@
+{
+  "name": "discord-role-reaction-bot",
+  "version": "1.0.0",
+  "description": "A Discord bot that assigns roles based on reactions",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.13.0",
+    "dotenv": "^16.3.1"
+  }
+}
