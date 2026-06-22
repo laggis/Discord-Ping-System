@@ -1,13 +1,16 @@
 {
-  "name": "discord-role-reaction-bot",
-  "version": "1.0.0",
-  "description": "A Discord bot that assigns roles based on reactions",
+  "name": "penguinhosting-ping-panel-bot",
+  "version": "1.0.6",
+  "description": "PenguinHosting Discord ping panel bot with modern embeds, add/remove buttons, safe role counts, and slash commands",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "pm2:start": "pm2 start index.js --name ping-bot --restart-delay 10000",
+    "pm2:restart": "pm2 restart ping-bot",
+    "pm2:logs": "pm2 logs ping-bot"
   },
   "dependencies": {
-    "discord.js": "^14.13.0",
-    "dotenv": "^16.3.1"
+    "discord.js": "14.21.0",
+    "dotenv": "16.3.1"
   }
 }
