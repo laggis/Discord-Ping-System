@@ -1,52 +1,51 @@
 {
-  "channelId": "1132030110002847744",
-  "logChannelId": "",
-  "color": "#00AEEF",
-  "thumbnailUrl": "https://cdn.penguinhosting.host/ping-penguin.png",
-  "dataFile": "roleData.json",
-  "exactRoleCounts": false,
-  "roleCountSyncIntervalMinutes": 10,
-  "roles": {
-    "ping": {
-      "roleId": "1132077210459717764",
+  "guildId": "PASTE_YOUR_SERVER_ID_HERE",
+  "channelId": "PASTE_YOUR_ROLE_PANEL_CHANNEL_ID_HERE",
+  "deleteDuplicatePanels": true,
+  "countMembers": true,
+  "updatePanelAfterRoleChange": true,
+  "panel": {
+    "title": "PenguinHosting • Ping & Role Panel",
+    "description": "Välj själv vilka pingar och community-roller du vill ha. Du kan lämna rollerna när som helst med remove-knapparna.",
+    "color": "#2B7FFF",
+    "footer": "PenguinHosting Roles • Du kan lämna rollerna när som helst"
+  },
+  "roles": [
+    {
+      "key": "updates",
+      "roleId": "PASTE_UPDATE_ROLE_ID_HERE",
       "emoji": "🔔",
-      "buttonLabel": "Toggle Update Ping",
       "title": "PenguinHosting Updates",
       "description": "Få viktiga servernyheter, maintenance och driftinfo utan att vi behöver använda @everyone.",
-      "addButtonLabel": "Get Update Ping",
-      "removeButtonLabel": "Remove Update Ping",
-      "color": "#00AEEF",
-      "statusText": "Du styr själv om du vill få update-pings eller lämna rollen igen.",
-      "benefits": [
+      "quote": "Du styr själv om du vill få update-pings eller lämna rollen igen.",
+      "buttonEmoji": "🔔",
+      "getLabel": "Get Update Ping",
+      "removeLabel": "Remove Update Ping",
+      "infoTitle": "Spamfritt",
+      "infoText": "Bara viktiga updates, inte onödiga mass-pings.",
+      "notes": [
         "Få ping när vi gör viktiga updates eller maintenance.",
         "Perfekt om du vill följa serverstatus utan @everyone-spam.",
         "Du kan ta bort rollen direkt med remove-knappen."
-      ],
-      "spamText": "Bara viktiga updates, inte onödiga mass-pings.",
-      "footerText": "PenguinHosting Updates • Du kan lämna rollen när som helst"
+      ]
     },
-    "fivem": {
-      "roleId": "761336023476994069",
+    {
+      "key": "fivem",
+      "roleId": "PASTE_FIVEM_ROLE_ID_HERE",
       "emoji": "🐧",
-      "buttonLabel": "Toggle FiveM Role",
       "title": "FiveM Community Role",
       "description": "Få eller ta bort din FiveM-roll och visa att du är en del av vår FiveM community.",
-      "addButtonLabel": "Get FiveM Role",
-      "removeButtonLabel": "Remove FiveM Role",
-      "color": "#5865F2",
-      "statusText": "Denna roll är för FiveM-spelare och FiveM-relaterade updates.",
-      "benefits": [
+      "quote": "Denna roll är för FiveM-spelare och FiveM-relaterade updates.",
+      "buttonEmoji": "🐧",
+      "getLabel": "Get FiveM Role",
+      "removeLabel": "Remove FiveM Role",
+      "infoTitle": "Spamfritt",
+      "infoText": "Endast FiveM-relevant information.",
+      "notes": [
         "Få tillgång till FiveM-relaterade pings och information.",
         "Hjälper staff att veta vilka som är intresserade av FiveM.",
         "Ta bort rollen när som helst med remove-knappen."
-      ],
-      "spamText": "Endast FiveM-relevant information.",
-      "footerText": "PenguinHosting FiveM • Du kan lämna rollen när som helst"
+      ]
     }
-  },
-  "legacyReactionsEnabled": true,
-  "removeLegacyReactionsOnRefresh": true,
-  "buttonMode": "add_remove",
-  "authorName": "PenguinHosting • Role Panel",
-  "authorIconUrl": "https://cdn.penguinhosting.host/ping-fivem.png"
+  ]
 }

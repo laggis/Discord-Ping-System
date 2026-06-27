@@ -1,16 +1,17 @@
 {
-  "name": "penguinhosting-ping-panel-bot",
-  "version": "1.0.6",
-  "description": "PenguinHosting Discord ping panel bot with modern embeds, add/remove buttons, safe role counts, and slash commands",
+  "name": "penguinhosting-role-panel",
+  "version": "2.0.0",
+  "description": "Discord role/ping panel with one combined embed and duplicate cleanup.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "pm2:start": "pm2 start index.js --name ping-bot --restart-delay 10000",
-    "pm2:restart": "pm2 restart ping-bot",
-    "pm2:logs": "pm2 logs ping-bot"
+    "check": "node --check index.js"
   },
   "dependencies": {
-    "discord.js": "14.21.0",
-    "dotenv": "16.3.1"
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5"
+  },
+  "engines": {
+    "node": ">=18.17.0"
   }
 }
